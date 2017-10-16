@@ -31,6 +31,15 @@
     <Filter Include="Objects\Camera">
       <UniqueIdentifier>{cbfa9b39-1673-4961-8b5b-7b9c4909ab9a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Objects\Game Objects">
+      <UniqueIdentifier>{4d76cb46-251e-4111-b3e6-ab73a10fc766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\NewFilter1">
+      <UniqueIdentifier>{6c2b7854-b6ac-4948-8752-17ce0e7f80a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Game Objects\EyeTotem">
+      <UniqueIdentifier>{dacb109e-ee4c-44ba-8be8-7c5fa61a4671}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -89,6 +98,18 @@
     </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>Objects\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Objects\Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="EyeTotem.cpp">
+      <Filter>Objects\Game Objects\EyeTotem</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationManager.cpp">
+      <Filter>Objects\Animation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -184,6 +205,21 @@
     </ClInclude>
     <ClInclude Include="Camera.h">
       <Filter>Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="structs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Objects\Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationManager.h">
+      <Filter>Objects\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="EyeTotem.h">
+      <Filter>Objects\Game Objects\EyeTotem</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

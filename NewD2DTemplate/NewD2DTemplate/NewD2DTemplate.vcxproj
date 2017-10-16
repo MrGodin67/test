@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="AnimationManager.cpp" />
     <ClCompile Include="AnimationSequence.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="D2D1Texture.cpp" />
@@ -154,12 +155,15 @@
     <ClCompile Include="Direct3D_2D.cpp" />
     <ClCompile Include="DrrectWrite.cpp" />
     <ClCompile Include="DXErr.cpp" />
+    <ClCompile Include="EyeTotem.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="Locator.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="SimpleTimer.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="Sprite2.cpp" />
@@ -168,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationManager.h" />
     <ClInclude Include="AnimationSequence.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="ChiliException.h" />
@@ -178,7 +183,9 @@
     <ClInclude Include="DirectWrite.h" />
     <ClInclude Include="Drawable.h" />
     <ClInclude Include="DXErr.h" />
+    <ClInclude Include="EyeTotem.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="Graphics.h" />
     <ClInclude Include="includes.h" />
@@ -186,6 +193,7 @@
     <ClInclude Include="keyboard.h" />
     <ClInclude Include="Locator.h" />
     <ClInclude Include="mouse.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Rect.h" />
     <ClInclude Include="RenderTarget.h" />
     <ClInclude Include="SimpleTimer.h" />
@@ -194,6 +202,7 @@
     <ClInclude Include="SoundManager.h" />
     <ClInclude Include="Sprite2.h" />
     <ClInclude Include="SpriteSheet.h" />
+    <ClInclude Include="structs.h" />
     <ClInclude Include="TextureManager.h" />
     <ClInclude Include="Utils.h" />
     <ClInclude Include="Vec2.h" />

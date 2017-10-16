@@ -7,8 +7,8 @@
 #include "InputManager.h"
 #include <memory>
 const static bool FULL_SCREEN = false;
-const static int SCREEN_WIDTH = 1024;
-const static int SCREEN_HEIGHT= 768;
+const static int SCREEN_WIDTH = 800;
+const static int SCREEN_HEIGHT= 600;
 const static WCHAR* APPLICATION_NAME = L"Defenders of the Cause";
 
 class Direct3DWindow

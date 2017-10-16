@@ -46,16 +46,16 @@ protected:
 	
 public:
 	Sprite() {}
-	Sprite(Animation::RenderDesc& desc,std::vector<int> indices,float interval,
+	Sprite(AnimationSequence::SequenceDesc& desc,std::vector<int> indices,float interval,
 		std::string imageName)
-		:AnimationSequence(desc,indices,interval,imageName),
-		m_extents((desc.drawRect.right - desc.drawRect.left), (desc.drawRect.bottom - desc.drawRect.top))
+		:AnimationSequence(desc),
+		m_extents((desc.desc.drawRect.right - desc.desc.drawRect.left), (desc.desc.drawRect.bottom - desc.desc.drawRect.top))
 	{
 		m_rotAngles.resize(indices.size());
 		for (size_t c = 0; c < m_rotAngles.size(); c++)
 			m_rotAngles[c] = 0.0f;
-		m_position = Vec2f(desc.drawRect.left + ((desc.drawRect.right - desc.drawRect.left) / 2.0f),
-			desc.drawRect.top + ((desc.drawRect.bottom - desc.drawRect.top) / 2.0f));
+		m_position = Vec2f(desc.desc.drawRect.left + ((desc.desc.drawRect.right - desc.desc.drawRect.left) / 2.0f),
+			desc.desc.drawRect.top + ((desc.desc.drawRect.bottom - desc.desc.drawRect.top) / 2.0f));
 		m_renderDesc.image = Locator::ImageManager->GetImage(m_imageName)->GetTexture();
 	}
 	
