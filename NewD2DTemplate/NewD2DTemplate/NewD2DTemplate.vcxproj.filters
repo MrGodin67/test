@@ -40,6 +40,15 @@
     <Filter Include="Objects\Game Objects\EyeTotem">
       <UniqueIdentifier>{dacb109e-ee4c-44ba-8be8-7c5fa61a4671}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Objects\Game Objects\Actor">
+      <UniqueIdentifier>{29ac9aa6-0ce7-4831-9154-cd60f7954a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\UI">
+      <UniqueIdentifier>{ce452cee-d00a-4c9f-9d08-7780d0e4fc89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\UI\Inventory">
+      <UniqueIdentifier>{8afed099-be46-4ebf-b4a3-840a81499321}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -110,6 +119,12 @@
     </ClCompile>
     <ClCompile Include="AnimationManager.cpp">
       <Filter>Objects\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Objects\Game Objects\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Objects\UI\Inventory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -220,6 +235,12 @@
     </ClInclude>
     <ClInclude Include="EyeTotem.h">
       <Filter>Objects\Game Objects\EyeTotem</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Objects\Game Objects\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>Objects\UI\Inventory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

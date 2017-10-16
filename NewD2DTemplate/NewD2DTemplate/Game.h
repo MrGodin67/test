@@ -13,6 +13,7 @@
 #include "TextureManager.h"
 #include "Player.h"
 #include "AnimationManager.h"
+#include "Inventory.h"
 class Game
 {
 	
@@ -27,6 +28,7 @@ private:
 	std::unique_ptr<TextureManager> m_textures;
 	std::unique_ptr<Player> m_player;
 	std::unique_ptr<AnimationManager> m_animationMgr;
+	std::unique_ptr<GUI_Inventory> m_inventory;
 	std::vector<std::unique_ptr<GameObject2D_Dynamic>> m_objects;
 public:
 	Game(class Direct3DWindow& wnd);

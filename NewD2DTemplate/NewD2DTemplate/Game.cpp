@@ -15,6 +15,7 @@ Game::Game(Direct3DWindow & wnd)
 	LoadImages();
 	SetUpPlayer();
 	CreateObjects();
+	m_inventory = std::make_unique<GUI_Inventory>();
 }
 
 bool Game::Play(const float& deltaTime)
@@ -49,6 +50,7 @@ HRESULT Game::RenderScene()
 	hr = gfx.BeginScene(0.0f, 0.0f, 0.0f, 1.0f);
 	if (FAILED(hr)) { return hr; }
 	
+	m_inventory->Draw(m_cam);
 	for (auto& it : m_objects)
 		it->Draw(gfx,m_cam);
 
@@ -76,7 +78,9 @@ void Game::LoadImages()
 	m_textures = std::make_unique<TextureManager>();
 	std::vector<TextureManager::ImageData> v_data;
 	TextureManager::ImageData data("main_image", L"image2.png", 32.0f, 32.0f);
+	TextureManager::ImageData data1("inventory_back", L"inventory_back.png", 512.0f, 512.0f);
 	v_data.push_back(data);
+	v_data.push_back(data1);
 	m_textures->LoadImages(v_data);
 	Locator::SetImageManager(m_textures.get());
 }
